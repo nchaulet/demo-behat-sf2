@@ -62,7 +62,7 @@ class FeatureContext extends MinkContext implements KernelAwareInterface
     public function iShouldGetAnEmailOn($email)
     {
 
-        $profile = $driver = $this->getSession()->getDriver()->getClient()->getProfile();
+        $profile = $this->getSession()->getDriver()->getClient()->getProfile();
 
         $collector = $profile->getCollector('swiftmailer');
 

@@ -13,7 +13,7 @@ Feature: Registering to newsletter
         And I press "Je m'inscris"
         Then I should see "Mail invalide"
 
-    Scenario: Registering to a newsletter with a unvalid mail (yopmail)
+    Scenario: Registering to a newsletter with a unvalid mail (no mail)
         Given I am on "/demo-2"
         When I press "Je m'inscris"
         Then I should see "Mail invalide"
