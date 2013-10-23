@@ -1,0 +1,16 @@
+{% extends "::base.html.twig" %}
+{% block body %}
+    <h2>Mega newsletter</h2>
+    <hr/>
+    {% if message is defined %}
+        <div class="alert alert-success">{{message}}</div>
+    {% endif %}
+    <form method="POST" role="form">
+        <div class="form-group">
+            <label>Email</label>
+            <input class="form-control" type="email" id="email" name="email" />
+        </div>
+        <input type="submit" class="btn btn-success" value="Je m'inscris" />
+
+    </form>
+{% endblock %}

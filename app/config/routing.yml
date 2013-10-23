@@ -1,0 +1,5 @@
+me_test:
+    resource: "@MeTestBundle/Controller/"
+    type:     annotation
+    prefix:   /
+

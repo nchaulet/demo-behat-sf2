@@ -1,0 +1,37 @@
+{% extends "::base.html.twig" %}
+{% block body %}
+
+    <div class="alert alert-warning" >
+        <h2 id="result">0 click(s)</h2>
+    </div>
+     <div >
+        <button id="buttonTest" class="btn btn-lg btn-success">Click me !</button>
+
+        <button id="buttonReset" class="btn btn-lg btn-danger">Reset</button>
+    </div>
+
+    <script type="text/javascript">
+    (function() {
+
+        var counter = 0;
+        var button = document.getElementById('buttonTest');
+
+        button.addEventListener('click', function() {
+
+            var result = document.getElementById('result');
+            counter++;
+            result.textContent = counter + ' click(s)';
+        });
+
+        var buttonReset = document.getElementById('buttonReset');
+
+        buttonReset.addEventListener('click', function() {
+
+            var result = document.getElementById('result');
+            counter = 0;
+            result.textContent = counter + ' click(s)';
+        });
+    })();
+    </script>
+
+{% endblock %}

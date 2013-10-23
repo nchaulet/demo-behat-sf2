@@ -1,0 +1,11 @@
+{
+  "name": "demo-behat-sf2",
+  "version": "0.0.0",
+  "authors": [
+    "nicolas <n.chaulet@gmail.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "~3.0.0"
+  }
+}

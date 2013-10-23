@@ -1,0 +1,19 @@
+default:
+    filters:
+        tags: ~@javascript
+    extensions:
+        Behat\Symfony2Extension\Extension:
+            mink_driver: true
+        Behat\MinkExtension\Extension:
+            default_session: symfony2
+
+js:
+    filters:
+        tags: @javascript
+    extensions:
+        Behat\Symfony2Extension\Extension:
+            mink_driver: true
+        Behat\MinkExtension\Extension:
+            base_url:  'http://localhost:8000/'
+            sahi: ~
+            javascript_session: sahi
